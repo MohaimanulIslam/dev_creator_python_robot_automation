@@ -1,9 +1,10 @@
 *** Settings ***
 Library     SeleniumLibrary
 Resource  ../Pages/loginPage.robot
+Resource  ../Pages/DashboardPage.robot
 
 *** Test Cases ***
-Login
+Dashboard
     open my browser
     click signIn
-    close browser
+    upload profile image

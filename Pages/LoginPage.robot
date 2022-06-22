@@ -3,7 +3,6 @@ Library     SeleniumLibrary
 Variables   ../Locators/locators.py
 Resource   ../Locators/variables.robot
 
-
 *** Keywords ***
 open my browser
     open browser    ${SiteUrl}   ${Browser}
@@ -14,7 +13,6 @@ click signIn
     click element  ${LOGIN_BTN}
     builtin.sleep   2
     input text  ${SET_EMAIL}    ${user}
-    input text  ${SET_PASS}     ${password}
+    input password  ${SET_PASS}     ${passFormLocator}
     click element  ${CLICK_SIGNIN_BTN}
-    sleep  20
-    close browser
+    sleep  5
