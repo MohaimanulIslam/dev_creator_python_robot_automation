@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.10 on win32)" generated="20220622 23:52:28.651" rpa="false" schemaversion="3">
+<suite id="s1" name="LoginPageTests" source="C:\Users\S.M.Mohaimanul Islam\PycharmProjects\DevCreator\Tests\LoginPageTests.robot">
+<test id="s1-t1" name="Login" line="6">
+<kw name="open my browser" library="loginPage">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220622 23:52:28.996" level="INFO">Opening browser 'chrome' to base url 'https://dev.creator.app/'.</msg>
+<status status="PASS" starttime="20220622 23:52:28.996" endtime="20220622 23:52:35.311"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220622 23:52:35.312" endtime="20220622 23:52:35.484"/>
+</kw>
+<status status="PASS" starttime="20220622 23:52:28.996" endtime="20220622 23:52:35.484"/>
+</kw>
+<kw name="click signIn" library="loginPage">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220622 23:52:37.496" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220622 23:52:35.491" endtime="20220622 23:52:37.496"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220622 23:52:37.497" level="INFO">Clicking element '//p[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220622 23:52:37.496" endtime="20220622 23:52:37.628"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220622 23:52:39.644" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220622 23:52:37.628" endtime="20220622 23:52:39.646"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SET_EMAIL}</arg>
+<arg>${user}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220622 23:52:39.650" level="INFO">Typing text 'test@gmail.com' into text field '(//input[@type='email'])[1]'.</msg>
+<status status="PASS" starttime="20220622 23:52:39.647" endtime="20220622 23:52:39.833"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${SET_PASS}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220622 23:52:39.834" level="INFO">Typing text 'BuildTogether' into text field '(//input[@type='password'])[1]'.</msg>
+<status status="PASS" starttime="20220622 23:52:39.833" endtime="20220622 23:52:39.986"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CLICK_SIGNIN_BTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220622 23:52:39.987" level="INFO">Clicking element '//button[contains(text(),'Log in')]'.</msg>
+<status status="PASS" starttime="20220622 23:52:39.986" endtime="20220622 23:52:40.047"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>20</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220622 23:53:00.065" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20220622 23:52:40.048" endtime="20220622 23:53:00.065"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220622 23:53:00.065" endtime="20220622 23:53:03.999"/>
+</kw>
+<status status="PASS" starttime="20220622 23:52:35.491" endtime="20220622 23:53:04.000"/>
+</kw>
+<status status="PASS" starttime="20220622 23:52:28.996" endtime="20220622 23:53:04.003"/>
+</test>
+<status status="PASS" starttime="20220622 23:52:28.651" endtime="20220622 23:53:04.011"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginPageTests">LoginPageTests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
