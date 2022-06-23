@@ -8,3 +8,4 @@ Dashboard
     open my browser
     click signIn
     upload profile image
+    add bio and add social media link
