@@ -22,4 +22,14 @@ CROSS_BTN = "//button[@class='MuiButton-root MuiButton-text MuiButton-textPrimar
 PROFILE_ICON = "//button[@class='bg-gray-800 flex text-sm rounded-full ']"
 LOG_OUT_BTN = "//P[contains(text(),'Sign out')]"
 
+# Create post page locators
+ADD_NEW_DEFAULT_COLLECTION = "(//div[@class='flex h-44 w-full cursor-pointer items-center justify-center rounded-2xl border'])[1]"
+ADD_YOUR_LINK_URL_TEXT_FIELD = "(//INPUT[@class='MuiOutlinedInput-input MuiInputBase-input css-1x5jdmq'])"
+ADD_YOUR_LINK_SEARCH_BTN = "//button[contains(text(),'Search')]"
+ADD_NEW_POST = "//button[contains(text(),'Add Post')]"
+CLICK_ON_EXPEND = "//span[contains(text(),' Expand ')]"
+CLICK_ON_BEHANCE_ELLIPSIES = "(//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk'])[3]"
+CLICK_ON_MOTIVATIONAL_ELLIPSIES = "(//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk'])[5]"
+CLICK_ON_DREAM_ELLIPSIES = "(//button[@class='MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-1yxmbwk'])[7]"
+
 passFormLocator = '#BuildTogether'
