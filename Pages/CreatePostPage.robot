@@ -78,3 +78,4 @@ click on the post ellipsis button
     execute javascript  window.scrollTo(0, 900)
     sleep   2
     click element  ${CLICK_ON_DREAM_ELLIPSIES}
+    reload page

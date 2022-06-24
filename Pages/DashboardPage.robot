@@ -16,6 +16,8 @@ add bio and add social media link
     click element  ${ADD_BIO_BUTTON}
     sleep   2
     input text  ${ENTER_BIO}    This is my Bio
+    set window size     1360    700
+    sleep   2
     click button  ${CLICK_ON_SAVE_BTN}
     sleep   2
     click element  ${CLICK_ON_ADD_SOCIAL_MEDIA}
